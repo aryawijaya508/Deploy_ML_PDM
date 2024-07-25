@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Classifier</title>
+</head>
+
+<body>
+    <div class="circlerposition w-[200px] h-[200px] bg-emerald-500 absolute z-1 top-[25%] left-[1%] translate-x-[10%] translate-y-[50%] rounded-full blur-[90px]"></div>
+    <div class="center pt-10">
+        <h1 class="text-center font-bold font-sans text-2xl text-emerald-500">CHILI PLANT DISEASE CLASIFIER</h1>
+        <div class="my-5 mx-7 p-2 bg-emerald-500 rounded-lg">
+            <p class="text-center text-white">Cabai adalah buah dan tumbuhan anggota genus Capsicum. Buahnya dapat digolongkan sebagai sayuran maupun bumbu, tergantung bagaimana pemanfaatannya. Sebagai bumbu, buah cabai yang pedas sangat populer di Asia Tenggara sebagai penguat rasa untuk makanan. Bagi seni masakan Padang, cabai bahkan dianggap sebagai "bahan makanan pokok" kesepuluh (alih-alih kesembilan). Sangat sulit bagi masakan Padang dibuat tanpa cabai.</p>
+        </div>
+        <div class="upload-section py-5">
+            <div class="bg-emerald-500 center w-1/2 mx-auto p-1 rounded py-auto">
+                <form class = "file-form bg-white rounded" action="/result" method="post", enctype="multipart/form-data">
+                    <input class="file-form-input" type="file" , name = "file"/>
+                    <button class="ml-10 btn btn-result text-white btn-lg w-24 px-1 bg-emerald-500 rounded-md">Predict</button> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
